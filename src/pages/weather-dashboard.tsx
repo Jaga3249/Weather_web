@@ -93,6 +93,7 @@ export function WeatherDashboard() {
   if (!weatherQuery.data || !forecastQuery.data) {
     return <WeatherSkeleton />;
   }
+  console.log("locationError", locationError);
 
   return (
     <div className="space-y-4">
